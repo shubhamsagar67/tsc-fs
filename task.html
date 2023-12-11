@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            height: 250px;
+            gap: 10px;
+            background-color: black ;
+        }
+        .wrapper>div{
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            text-align: justify;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        /* .box1{
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            text-align: justify;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .box2{
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            text-align: justify;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .box3{
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            text-align: justify;
+            border-radius: 20px;
+            overflow: hidden;
+        } */
+
+        .box2:nth-child(2){
+            align-self: center;
+            
+        }
+        .box3:nth-child(3){
+            align-self: end;
+            
+        }
+        .logo{
+            border-radius: 70%;
+            width: 70px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="box1">
+                <div class="main">
+                    </div>
+                    <div class="logo">
+                        <img src="logo.png" alt="" class="logo">
+                    </div>
+                    <div class="header">
+                        <h4>Lorem, ipsum.</h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aperiam atque fugiat ipsa, excepturi illum provident</p>
+            </div>
+            <div class="box2">
+                <div class="logo">
+                    <img src="logo.png" alt="" class="logo">
+                </div>
+                <div class="header">
+                    <h4>Lorem, ipsum
+                    </h4>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores soluta, harum illo quo cupiditate dolor velit</p>
+            </div>
+            <div class="box3">
+                <div class="logo">
+                        <img src="logo.png" alt="" class="logo">
+
+                </div>
+                <div class="header">
+                    <h4>Lorem, ipsum</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo aperiam dicta sunt neque rerum, voluptas dolores</p>
+            </div>
+        </div>   
+</body>
+</html>

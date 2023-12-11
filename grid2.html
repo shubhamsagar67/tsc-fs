@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns:;
+            grid-template: "logo menu menu " 64px
+                            "banner banner panel"
+                            "title description panel"
+                            "task1 task2 task3"; 1fr/2fr/3fr; 
+            gap: 10px;
+            height: 100vh;
+        }
+        .box{
+            background-color: red;
+        }
+        .wrapper > :nth-child(1){
+            grid-area: logo;
+        }
+        .wrapper > :nth-child(2){
+            grid-area: menu;
+        }
+        .wrapper > :nth-child(3){
+            grid-area: banner;
+        }
+        .wrapper > :nth-child(4){
+            grid-area: title;
+        }
+        .wrapper > :nth-child(5){
+            grid-area: description;
+        }
+        .wrapper > :nth-child(6){
+            grid-area: panel;
+        }
+        .wrapper > :nth-child(7){
+            grid-area: task1;
+        }
+        .wrapper > :nth-child(8){
+            grid-area: task2;
+        }
+        .wrapper > :nth-child(9){
+            grid-area: task3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="box">logo</div>
+    <div class="box">menu</div>
+    <div class="box">banner</div>
+    <div class="box">title</div>
+    <div class="box">description</div>
+    <div class="box">panel</div>
+    <div class="box">task1</div>
+    <div class="box">task2</div>
+    <div class="box">task3</div>
+</div>
+</body>
+</html>

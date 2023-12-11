@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(2,200px);
+            height: 100vh;
+            gap: 40px;
+            
+    
+        }
+        .box{
+            background-color: yellow;
+            border-radius: 10px;
+        }
+        .box:nth-child(1){
+            grid-row: span 2;
+            /* border-radius: 10px; */
+        }
+        .full{
+            height: 300px;
+            background-color: yellow;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .half{
+            height: 140px;
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+
+         }
+
+         .full1{
+            height: 30px;
+            background-color: yellow;
+            border-radius: 15px;
+            text-align: center;
+         }
+         .half1{
+            border-radius: 15px;
+            text-align: center;
+            /* border-radius: 0px 0px 20px 20px; */
+            height: 180px;
+            background-color:blue;
+         }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="full">full</div>
+            <div class="half">daily <p>daily</p><p>daily</p></div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+        <div class="box">
+            <div class="full1">full1</div>
+            <div class="half1">half1</div>
+        </div>
+    </div>
+</body>
+</html>
